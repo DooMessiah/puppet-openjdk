@@ -2,7 +2,7 @@
 class openjdk::params {
   case $::lsbdistid {
     'debian': {
-      $headlesspackage = 'openjdk-6-jre-headless'
+      $packageheadless = 'openjdk-6-jre-headless'
     }
     default: {
       notice("${::lsbdistid} not supported")
