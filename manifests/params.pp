@@ -1,7 +1,7 @@
 # Class: openjdk::params
 class openjdk::params {
   case $::lsbdistid {
-    'debian': {
+    Ubuntu,Debian: {
       $packageheadless = 'openjdk-6-jre-headless'
     }
     'ubuntu': {
